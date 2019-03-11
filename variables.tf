@@ -39,10 +39,6 @@ variable "network_vars" {
   type = "map"
 }
 
-# variable "domains" {
-#   type = "map"
-# }
-
 variable "public_subnet_enable" {
   default = false
 }
