@@ -98,7 +98,7 @@ resource "aws_security_group" "bastion" {
   ingress {
     from_port   = 22
     to_port     = 22
-    protocol    = "-1"
+    protocol    = "TCP"
     cidr_blocks = ["${split(",", var.bastion["allowed_ips"])}"]
   }
 
